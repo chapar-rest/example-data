@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: cdedcae1-cb67-4f88-94bd-6058c321da47
+  name: Get Types
+  type: GET
+spec:
+  http:
+    method: GET
+    url: '{{baseURL}}/id/v1/types'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: 312ebf6c-ff0e-4c23-99ed-5fd92b2c7d1a
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams: []
+      queryParams: []
+      body:
+        type: JSON
+        data: ""
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          from: ""
+          fromKey: ""
+    responses: []

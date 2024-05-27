@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Collection
+metadata:
+  id: 7a0b2dcb-7bfe-4129-b45f-f9309d11df54
+  name: Certs API
+spec:
+  requests: []

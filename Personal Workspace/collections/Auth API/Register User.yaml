@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: 2e7717fc-c3e2-4c7d-81a9-e64be83c2434
+  name: Register User
+  type: GET
+spec:
+  http:
+    method: GET
+    url: '{{baseURL}}/auth/v1/register'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: 8265be9b-3d67-4fd2-b3c9-44fefbd8f5c7
+        key: Content-Type
+        value: application/json
+        enable: true
+      - id: bd631e8e-6a04-41c1-b05b-ea2c7a7949c6
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams: []
+      queryParams: []
+      body:
+        type: json
+        data: |-
+          {
+            "email": "user@test.com",
+            "password": "foobar",
+            "first_name": "mohsen",
+            "last_name": "m"
+          }
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          statusCode: 0
+          from: ""
+          fromKey: ""
+    responses: []

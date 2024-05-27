@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Collection
+metadata:
+  id: 66929b70-3095-46be-8555-0fd2542a0914
+  name: ID API
+spec:
+  requests: []

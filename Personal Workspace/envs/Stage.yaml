@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Environment
+metadata:
+  id: b9f21e14-8f4e-4fb1-99a7-6b67e9e6434c
+  name: Stage
+spec:
+  values:
+  - id: df32c99f-91f5-43b2-af2f-28d3029af705
+    key: baseURL
+    value: apihub.pro
+    enable: true
+  - id: e23954de-5102-4377-9180-81c310bb085f
+    key: schema
+    value: https
+    enable: true
+  - id: 62f4e50e-cca3-49eb-886c-8c31880a14fb
+    key: access_token
+    value: ""
+    enable: true

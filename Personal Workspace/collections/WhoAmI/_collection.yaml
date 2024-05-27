@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Collection
+metadata:
+  id: 9b1fe1c9-dd89-4a68-b6e0-e378fca7db9f
+  name: WhoAmI
+spec:
+  requests: []

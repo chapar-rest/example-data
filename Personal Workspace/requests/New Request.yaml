@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: b2fa3dc1-2f84-469c-a43e-1052d5b96787
+  name: New Request
+  type: http
+spec:
+  http:
+    method: GET
+    url: https://example.com
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: ""
+        key: Content-Type
+        value: application/json
+        enable: false
+      pathParams: []
+      queryParams: []
+      body:
+        type: ""
+        data: ""
+      auth:
+        type: ""
+      preRequest:
+        type: ""
+        script: ""
+      postRequest:
+        type: ""
+        script: ""
+        set:
+          target: ""
+          statusCode: 0
+          from: ""
+          fromKey: ""
+    responses: []

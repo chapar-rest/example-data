@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: dcc12e63-f4d8-42ff-bd02-744ce68aec59
+  name: Create Task
+  type: GET
+spec:
+  http:
+    method: POST
+    url: '{{baseURL}}/todo/v1/tasks'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: 5adc37ca-ae6f-43be-9f8d-aed9d31b81db
+        key: X-USER-ID
+        value: mohsen
+        enable: true
+      - id: d4965566-e6d1-472d-91c6-5a2397682c87
+        key: Content-Type
+        value: application/json
+        enable: true
+      - id: 46b0f629-bddb-4f36-b725-b66ae78dd564
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams: []
+      queryParams: []
+      body:
+        type: JSON
+        data: |-
+          {
+            "title": "Test",
+            "description": "test",
+            "status": "todo"
+          }
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          from: ""
+          fromKey: ""
+    responses: []

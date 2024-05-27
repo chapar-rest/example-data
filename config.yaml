@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Config
+metadata:
+  id: config
+  name: config
+spec:
+  activeWorkspace:
+    id: 8451833b-43cb-4fd2-908e-b14249c519fa
+    name: Personal Workspace

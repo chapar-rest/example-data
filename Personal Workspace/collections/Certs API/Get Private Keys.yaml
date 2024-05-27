@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: c96f7058-3d5a-4a3f-b861-1493243f2db6
+  name: Get Private Keys
+  type: GET
+spec:
+  http:
+    method: GET
+    url: '{{baseUrl}}/certs/v1/.keys'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: 4a3028fc-5f65-449f-aaf0-3e942f1806be
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams: []
+      queryParams: []
+      body:
+        type: none
+        data: ""
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          from: ""
+          fromKey: ""
+    responses: []

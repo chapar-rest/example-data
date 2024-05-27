@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Collection
+metadata:
+  id: e40d3400-04f8-4b28-818d-19f71177e8ad
+  name: Todo API
+spec:
+  requests: []

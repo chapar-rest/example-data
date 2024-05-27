@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: ff2025a0-0a2a-415d-a80a-7c1cc45f6f7b
+  name: whoami
+  type: GET
+spec:
+  http:
+    method: GET
+    url: '{{baseURL}}/whoami'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers: []
+      pathParams: []
+      queryParams: []
+      body:
+        type: JSON
+        data: ""
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          from: ""
+          fromKey: ""
+    responses: []

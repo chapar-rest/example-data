@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Preferences
+metadata:
+  id: b08531a5-97b8-4d21-a461-31e7981c45e3
+  name: Preferences
+spec:
+  darkMode: true
+  selectedEnvironment:
+    id: ""
+    name: None

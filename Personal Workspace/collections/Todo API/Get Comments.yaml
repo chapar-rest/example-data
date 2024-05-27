@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: aec90eeb-511f-435b-a7c9-33e1ae778324
+  name: Get Comments
+  type: GET
+spec:
+  http:
+    method: GET
+    url: '{{baseUrl}}/todo/v1/tasks/:task_id/comments?limit=<integer>&offset=<integer>'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: fa102f77-9348-42ed-99f1-b01e5ee8a06f
+        key: X-USER-ID
+        value: <string>
+        enable: true
+      - id: 13dcadd6-9da7-48f9-ae9c-9280239be8cf
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams: []
+      queryParams: []
+      body:
+        type: JSON
+        data: ""
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          from: ""
+          fromKey: ""
+    responses: []

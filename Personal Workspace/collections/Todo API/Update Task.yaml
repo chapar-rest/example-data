@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: 9b96f4e7-e3ef-4957-a964-6482e1065392
+  name: Update Task
+  type: GET
+spec:
+  http:
+    method: PUT
+    url: '{{baseURL}}/todo/v1/tasks/:task_id'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: bbc90703-f970-421e-bf12-fe00a67b0e7b
+        key: X-USER-ID
+        value: mohsen
+        enable: true
+      - id: 346392e4-18c2-4fff-abdf-256d9afe4bed
+        key: Content-Type
+        value: application/json
+        enable: true
+      - id: c2012fd3-7d8a-4d51-a65b-f52e481b1407
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams: []
+      queryParams: []
+      body:
+        type: JSON
+        data: |-
+          {
+            "title": "Merge dbctl pr"
+          }
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          from: ""
+          fromKey: ""
+    responses: []

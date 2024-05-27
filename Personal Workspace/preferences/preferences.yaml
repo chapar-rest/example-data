@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Preferences
+metadata:
+  id: e7c53c07-708c-49ca-a528-5dd83dd0b94f
+  name: Preferences
+spec:
+  darkMode: true
+  selectedEnvironment:
+    id: b9f21e14-8f4e-4fb1-99a7-6b67e9e6434c
+    name: Stage

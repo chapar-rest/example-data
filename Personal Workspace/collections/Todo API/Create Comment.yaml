@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: ff6f2f49-d39f-4ebf-bd1c-8ebed813133f
+  name: Create Comment
+  type: GET
+spec:
+  http:
+    method: POST
+    url: '{{baseURL}}/todo/v1/tasks/{task_id}/comments'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: 617cbf92-4d00-4e86-b47f-c00e413a3045
+        key: X-USER-ID
+        value: <string>
+        enable: true
+      - id: 884980b6-1fe7-4df0-a36a-5f7b14ee8d99
+        key: Content-Type
+        value: application/json
+        enable: true
+      - id: 00e729db-c820-4ed4-a7e1-83b4adcab75b
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams:
+      - id: 4ce03088-81db-48d4-837a-de066ae50088
+        key: task_id
+        value: foo
+        enable: true
+      queryParams: []
+      body:
+        type: json
+        data: |-
+          {
+            "comment": "<string>"
+          }
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          from: ""
+          fromKey: ""
+    responses: []

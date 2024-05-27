@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Environment
+metadata:
+  id: 81a9dfe3-7520-4bc6-94e6-8e813f72d634
+  name: Local
+spec:
+  values:
+  - id: c6dd1994-05e9-4f0a-8bc7-6d02664d4dc9
+    key: baseURL
+    value: http://localhost:9095
+    enable: true
+  - id: f0f5c155-f86f-4e54-a637-ca71ab58aa9f
+    key: schema
+    value: http
+    enable: true
+  - id: 5301ae5c-5adb-4618-b22e-f39e95d49fcb
+    key: access_token
+    value: ""
+    enable: true

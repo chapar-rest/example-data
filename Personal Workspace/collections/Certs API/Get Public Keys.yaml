@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: 042d4570-350f-4237-bc9d-f74ec826ac76
+  name: Get Public Keys
+  type: GET
+spec:
+  http:
+    method: GET
+    url: '{{baseURL}}/certs/v1/keys'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: b742c9c3-092f-444f-b337-966c436abb01
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams: []
+      queryParams: []
+      body:
+        type: JSON
+        data: ""
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          from: ""
+          fromKey: ""
+    responses: []

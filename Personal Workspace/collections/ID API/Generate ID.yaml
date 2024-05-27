@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Request
+metadata:
+  id: f4154b43-db15-4f15-9b19-3c494de18af4
+  name: Generate ID
+  type: GET
+spec:
+  http:
+    method: GET
+    url: '{{baseURL}}/id/v1/generate?type=snowflake'
+    lastUsedEnvironment:
+      id: ""
+      name: ""
+    request:
+      headers:
+      - id: ddcac5e3-ad44-4424-9d9c-3690550b647f
+        key: Accept
+        value: application/json
+        enable: true
+      pathParams: []
+      queryParams: []
+      body:
+        type: JSON
+        data: ""
+      auth:
+        type: None
+      preRequest:
+        type: None
+        script: ""
+      postRequest:
+        type: None
+        script: ""
+        set:
+          target: ""
+          statusCode: 0
+          from: ""
+          fromKey: ""
+    responses: []
